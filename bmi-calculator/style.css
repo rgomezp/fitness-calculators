@@ -1,0 +1,53 @@
+/* BMI Thermometer Styles */
+.thermometer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  height: 100%;
+}
+
+.underweight-1 {
+  background: red;
+  flex: 16; /* Proportional width for 0-16 */
+}
+
+.underweight-2 {
+  background: yellow;
+  flex: 2.5; /* Proportional width for 16-18.5 */
+}
+
+.normal {
+  background: green;
+  flex: 6.5; /* Proportional width for 18.5-25 */
+}
+
+.overweight {
+  background: yellow;
+  flex: 5; /* Proportional width for 25-30 */
+}
+
+.obese {
+  background: red;
+  flex: 10; /* Proportional width for 30+ */
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  top: -10px;
+  width: 6px;
+  height: 50px;
+  background: #000;
+  border-radius: 3px;
+  transition: left 1s ease;
+}
